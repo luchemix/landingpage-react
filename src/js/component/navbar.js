@@ -4,10 +4,10 @@ import React from "react";
 export function NavBar() {
 	return (
 		<div>
-			<nav className="navbar navbar-expand-lg navbar-light bg-light">
+			<nav className="navbar navbar-expand-lg navbar-light bg-dark">
 				<div className="container-fluid">
-					<a className="navbar-brand" href="#">
-						Navbar
+					<a className="navbar-brand text-light" href="#">
+						<img src="4geeks.ico"></img>
 					</a>
 					<button
 						className="navbar-toggler"
@@ -25,20 +25,20 @@ export function NavBar() {
 						<ul className="navbar-nav me-auto mb-2 mb-lg-0">
 							<li className="nav-item">
 								<a
-									className="nav-link active"
+									className="nav-link active text-light"
 									aria-current="page"
 									href="#">
 									Home
 								</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link" href="#">
+								<a className="nav-link text-light" href="#">
 									Link
 								</a>
 							</li>
 							<li className="nav-item dropdown">
 								<a
-									className="nav-link dropdown-toggle"
+									className="nav-link dropdown-toggle text-light"
 									href="#"
 									id="navbarDropdown"
 									role="button"
@@ -70,15 +70,15 @@ export function NavBar() {
 								</ul>
 							</li>
 						</ul>
-						<form className="d-flex">
+						<form className="d-flex justify-content-end text-light">
 							<input
-								className="form-control me-2"
+								className="form-control me-2 d-flex justify-content-end"
 								type="search"
 								placeholder="Search"
 								aria-label="Search"
 							/>
 							<button
-								className="btn btn-outline-success"
+								className="btn btn-outline-success d-flex justify-content-end text-light"
 								type="submit">
 								Search
 							</button>
