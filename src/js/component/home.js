@@ -4,19 +4,30 @@ import React from "react";
 import { NavBar } from "./navbar.js";
 import { Cards } from "./cards.js";
 import Footer from "./footer.js";
+import { Jumbotron } from "./jumbo.js";
 //create your first component
 export function Home() {
 	return (
 		<div>
 			<NavBar />
-			<div className="container mx-5">
-				<div className="card-deck">
-					<Cards />
-					<Cards />
-					<Cards />
-					<Cards />
+			<div className="container-flex justify-content-center">
+				<Jumbotron />
+				<div className="row">
+					<div className="col-sm-3">
+						<Cards />
+					</div>
+					<div className="col-sm-3">
+						<Cards />
+					</div>
+					<div className="col-sm-3">
+						<Cards />
+					</div>
+					<div className="col-sm-3">
+						<Cards />
+					</div>
 				</div>
 			</div>
+
 			<div className="fixed-bottom">
 				<Footer />
 			</div>
