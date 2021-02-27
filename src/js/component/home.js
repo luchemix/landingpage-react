@@ -15,7 +15,9 @@ export function Home() {
 				<Cards />
 				<Cards />
 			</div>
-			<Footer />
+			<div className="fixed-bottom">
+				<Footer />
+			</div>
 		</div>
 	);
 }
