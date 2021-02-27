@@ -9,11 +9,13 @@ export function Home() {
 	return (
 		<div>
 			<NavBar />
-			<div className="row">
-				<Cards />
-				<Cards />
-				<Cards />
-				<Cards />
+			<div className="container mx-5">
+				<div className="card-deck">
+					<Cards />
+					<Cards />
+					<Cards />
+					<Cards />
+				</div>
 			</div>
 		</div>
 	);
